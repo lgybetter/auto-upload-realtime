@@ -1,6 +1,3 @@
-/**
- * Created by jiege on 17-4-8.
- */
 'use strict';
 const assert = require('assert');
 const co = require('co');

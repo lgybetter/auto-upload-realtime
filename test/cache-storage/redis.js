@@ -1,6 +1,3 @@
-/**
- * Created by jiege on 17-4-7.
- */
 'use strict';
 const uuid = require('uuid');
 const cache = require('../../cache-storage/redis');
