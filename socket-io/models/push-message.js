@@ -40,6 +40,7 @@ exports.init = io => {
     socket.on('pushMessage', ({ roomId, message }, cb) => {
       co(function* () {
         try {
+          // 每次只推送最新的代码push消息
           yield cacheStorage.remove(roomId)
           let msg = yield cacheStorage.save(roomId, message)
           io.to(roomId).emit('message', { message, msgId: msg.msgId, roomId: msg.roomId })

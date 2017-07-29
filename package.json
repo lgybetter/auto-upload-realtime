@@ -1,12 +1,12 @@
 {
-  "name": "redis-demo",
+  "name": "realtime-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "user realtime server to push code update message",
   "main": "index.js",
   "scripts": {
     "test": "mocha test --recursive --timeout 400000"
   },
-  "author": "",
+  "author": "lgybetter",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.0",
