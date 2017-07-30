@@ -1,6 +1,3 @@
-/**
- * Created by jiege on 17-4-8.
- */
 const assert = require('assert');
 const request = require('request');
 const rq = require('request-promise');
@@ -10,15 +7,13 @@ const co = require('co');
 const Promise = require('bluebird');
 const socketIoClient = require('socket.io-client');
 
-let bbcloudUrl = nconf.get('bbcloud').url;
-
 let username = "15915835889";
 let password = "jiegewifi123";
 
 let token = null;
 let roomId = null;
 
-let wsUrl = "ws://localhost:6005";
+let wsUrl = "ws://localhost:5001";
 let client = null;
 
 let received = [];

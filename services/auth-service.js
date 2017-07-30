@@ -1,7 +1,6 @@
 const nconf = require('../nconf')
 const Promise = require('bluebird')
 const request = require('request')
-const baseUrl = nconf.get('bbcloud').url
 
 exports.getUserInfo = (userInfo) => {
   let _userinfo = nconf.get('userInfo')

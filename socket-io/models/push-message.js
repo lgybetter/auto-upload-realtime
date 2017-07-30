@@ -38,6 +38,7 @@ exports.init = io => {
      * @param {*} message 需要推送的消息
      */
     socket.on('pushMessage', ({ roomId, message }, cb) => {
+      console.log('pushMessage', roomId, message)
       co(function* () {
         try {
           // 每次只推送最新的代码push消息
@@ -69,6 +70,7 @@ exports.init = io => {
      * @param {*} msgId 已经收到的消息Id
      */
     socket.on('confirmRecept', ({ roomId, msgId }) => {
+      console.log('confirmRecept', roomId, msgId)
       co(function* () {
         try {
           let msgs = yield cacheStorage.removeOne(roomId, msgId)

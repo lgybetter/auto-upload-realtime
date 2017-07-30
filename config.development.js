@@ -1,5 +1,5 @@
 module.exports = {
-  port: 6005,
+  port: 5001,
   queue: {
     suffix: "YYYY-MM-DD",
     expire: 60*60*24*7

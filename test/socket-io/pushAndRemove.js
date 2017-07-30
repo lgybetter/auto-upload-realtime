@@ -6,7 +6,7 @@ const cache = require('../../cache-storage/redis');
 const Promise = require('bluebird');
 const socketIoClient = require('socket.io-client');
 let client = null;
-let wsUrl = "ws://localhost:6005";
+let wsUrl = "ws://localhost:5001";
 
 let roomId = "testRoomId";
 let pushTotal = 300;

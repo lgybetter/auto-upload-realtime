@@ -6,8 +6,6 @@ const co = require('co');
 
 let roomId = uuid.v4();
 
-
-
 let msgIds = [];
 let scores = [];
 let messages = null;
