@@ -18,7 +18,7 @@ Promise.promisifyAll(redis.Multi.prototype)
 
 const getRedisKeyName = (src) => {
   let suffix = moment().format(queueConfig.suffix);
-  return src + suffix;
+  return src;
 }
 
 /**
